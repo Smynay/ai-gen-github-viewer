@@ -1,0 +1,9 @@
+{
+  "extends": "./tsconfig.app.json",
+  "compilerOptions": {
+    "verbatimModuleSyntax": false,
+    "noEmit": false,
+    "isolatedModules": true
+  },
+  "include": ["src", "jest.setup.ts", "jest.config.ts"]
+}
