@@ -2,6 +2,8 @@
 
 A GitHub-style repository viewer that lists public repositories of a user with key metrics: name, description, commit count, forks, and stars.
 
+> **Built with AI** — This project was generated using [OpenCode](https://opencode.ai) with the [Kimi K2.6](https://www.moonshot.cn/) model.
+
 ## Features
 
 - Search for any GitHub user's public repositories
