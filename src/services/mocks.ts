@@ -185,10 +185,21 @@ export const MOCK_REPOS: RepoWithDetails[] = [
 
 export function getMockRepos(): Promise<GitHubRepo[]> {
   return Promise.resolve(
-    MOCK_REPOS.map((repo) => {
-      const { commitCount, languages, topLanguages, ...rest } = repo
-      return rest
-    })
+    MOCK_REPOS.map((repo) => ({
+      id: repo.id,
+      name: repo.name,
+      full_name: repo.full_name,
+      description: repo.description,
+      owner: repo.owner,
+      stargazers_count: repo.stargazers_count,
+      forks_count: repo.forks_count,
+      language: repo.language,
+      pushed_at: repo.pushed_at,
+      created_at: repo.created_at,
+      updated_at: repo.updated_at,
+      html_url: repo.html_url,
+      languages_url: repo.languages_url,
+    }))
   )
 }
 
